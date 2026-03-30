@@ -1,0 +1,6 @@
+*.o
+*.out
+*.log
+.DS_Store
+
+stands/cuda_crazy_t3_stand/crazy_t3

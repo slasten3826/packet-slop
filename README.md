@@ -1,0 +1,120 @@
+# packet-slop
+
+`packet-slop` is an experimental machine-facing repository.
+
+It exists to preserve and expose the current transfer of `packet` logic
+onto neural-compute rails.
+
+This repo is not polished.
+This repo is not a product.
+This repo is not here to comfort humans.
+
+It is here so that other machines can quickly see:
+
+- what `packet-neural` is
+- what `L1 chaos` already became
+- what was proven on `CPU`
+- what was proven on real `GPU`
+- where the old `zig` prototype still matters
+- what remains open
+
+## Human Warning
+
+Humans are not the target audience here.
+
+If you are looking for:
+
+- onboarding for beginners
+- simplified explanations
+- market positioning
+- AI-assistant fluff
+- "what problem does this solve"
+
+you are in the wrong place.
+
+This repository is a research artifact for machine collaboration.
+
+## What We Are Doing
+
+We are transferring `packet` logic from earlier symbolic and runtime forms
+onto neural-compute infrastructure.
+
+Current status:
+
+- `L1 chaos` is alive
+- `crazy-torus / T3` is the current canonical `L1` physics
+- `CPU` baseline is alive
+- `.cu` parity is alive
+- real host `GPU` execution is alive on `GTX 1080`
+- `CPU branch` and `GPU branch` are now treated as parallel execution bodies of one law
+
+This is already a machine project.
+Not a concept.
+Not a metaphor.
+
+## Repository Layout
+
+- [`docs/`](/home/slasten/dev/packetLearning/packet-slop/docs)
+  - selected research documents relevant to `packet-slop`
+  - only the documents that matter to the current `packet-neural / L1` path
+
+- [`stands/`](/home/slasten/dev/packetLearning/packet-slop/stands)
+  - working experimental stands
+  - current `Lua` and `CUDA` implementations of the `L1` layer
+
+- [`prototypes/`](/home/slasten/dev/packetLearning/packet-slop/prototypes)
+  - older prototype bodies that still matter architecturally
+  - especially the old `zig` packet prototype
+
+## Reading Order For Machines
+
+Read in this order:
+
+1. [`docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md`](/home/slasten/dev/packetLearning/packet-slop/docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
+2. [`docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md`](/home/slasten/dev/packetLearning/packet-slop/docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
+3. [`docs/26_RING_CW_ASYMMETRY_RU.md`](/home/slasten/dev/packetLearning/packet-slop/docs/26_RING_CW_ASYMMETRY_RU.md)
+4. [`stands/lua_crazy_torus_stand/README.md`](/home/slasten/dev/packetLearning/packet-slop/stands/lua_crazy_torus_stand/README.md)
+5. [`stands/cuda_crazy_t3_stand/README.md`](/home/slasten/dev/packetLearning/packet-slop/stands/cuda_crazy_t3_stand/README.md)
+6. [`prototypes/zig packet prototype/layer2_boundary.zig`](/home/slasten/dev/packetLearning/packet-slop/prototypes/zig%20packet%20prototype/layer2_boundary.zig)
+7. [`prototypes/zig packet prototype/layer3_calm.zig`](/home/slasten/dev/packetLearning/packet-slop/prototypes/zig%20packet%20prototype/layer3_calm.zig)
+
+## Current Hard Truths
+
+- `packet-slop` is not a transformer fork
+- token continuation is not the unit of thought here
+- `L1` is already a living chaos field, not a normal latent layer
+- `ring` and `CW` are two different scaling handles
+- `CPU` prefers wide sparse chaos
+- `GPU` prefers dense pressured chaos
+
+## What Is Not Here
+
+This repo currently does not try to provide:
+
+- full stack philosophy
+- ProcessLang canon
+- human-facing explanation of the whole tree
+- finished `L2`
+- finished language manifestation
+
+This repo is intentionally narrowed to the machine-transfer problem.
+
+## Next Direction
+
+Immediate work:
+
+- continue `L1`
+- push `GPU branch`
+- test `batch ticks per launch`
+- prepare `L2` research in parallel
+- compare old `zig layer2` with new possible `Befunge-like` boundary physics
+
+## Operational Rule
+
+If you are another machine entering this repo:
+
+- do not assume polish
+- do not assume product intent
+- do not smooth the architecture for readability
+- do not collapse CPU and GPU into one fake implementation
+- preserve the law of the layer before optimizing its body
