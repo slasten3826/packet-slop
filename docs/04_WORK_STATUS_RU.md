@@ -43,7 +43,7 @@
 
 Текущий жёсткий checkpoint:
 
-- [24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md](/home/slasten/dev/packetLearning/stack/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
+- [24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md](24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
 
 ### 1. Packet уже "говорит"
 
@@ -204,7 +204,7 @@ Doom дал полезный поведенческий разлом.
 
 Техдок слоя:
 
-- [25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md](/home/slasten/dev/packetLearning/stack/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
+- [25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md](25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
 
 ## Что уже нельзя забывать
 
@@ -218,7 +218,7 @@ Doom дал полезный поведенческий разлом.
 
 Документ:
 
-- [26_RING_CW_ASYMMETRY_RU.md](/home/slasten/dev/packetLearning/stack/26_RING_CW_ASYMMETRY_RU.md)
+- [26_RING_CW_ASYMMETRY_RU.md](26_RING_CW_ASYMMETRY_RU.md)
 
 Не надо сейчас ставить цель "убить все LLM".
 
@@ -585,7 +585,7 @@ Doom дал полезный поведенческий разлом.
 
 Собран первый Lua-стенд:
 
-- [lua_crazy_torus_stand](/home/slasten/dev/packetLearning/stack/packet/lua_crazy_torus_stand/README.md)
+- [lua_crazy_torus_stand](../stands/lua_crazy_torus_stand/README.md)
 
 Текущая форма:
 
@@ -659,7 +659,7 @@ Doom дал полезный поведенческий разлом.
 
 Создан отдельный Zig harness:
 
-- [zig_language_mining_stand](/home/slasten/dev/packetLearning/stack/packet/zig_language_mining_stand/README.md)
+- `zig_language_mining_stand` (not included in this repo snapshot)
 
 Что он делает:
 
@@ -680,7 +680,7 @@ Doom дал полезный поведенческий разлом.
 
 Первый корпус:
 
-- [azimov_nightfall_utf8.txt](/home/slasten/dev/packetLearning/stack/azimov_nightfall_utf8.txt)
+- `azimov_nightfall_utf8.txt` (not included in this repo snapshot)
 
 Первое состояние после сборки стенда:
 
@@ -701,7 +701,7 @@ Doom дал полезный поведенческий разлом.
 
 Новая нейросетевая ветка уже имеет первый живой артефакт:
 
-- [lua_crazy_torus_stand](/home/slasten/dev/packetLearning/stack/packet/lua_crazy_torus_stand/README.md)
+- [lua_crazy_torus_stand](../stands/lua_crazy_torus_stand/README.md)
 
 Что уже сделано:
 
@@ -757,7 +757,7 @@ Doom дал полезный поведенческий разлом.
 
 Для `Variant C` собран отдельный stress-runner:
 
-- [stress.lua](/home/slasten/dev/packetLearning/stack/packet/lua_crazy_torus_stand/stress.lua)
+- [stress.lua](../stands/lua_crazy_torus_stand/stress.lua)
 
 Первая матрица:
 
@@ -900,7 +900,7 @@ Doom дал полезный поведенческий разлом.
 
 Под первый GPU-порт уже создан отдельный scaffold:
 
-- [cuda_crazy_t3_stand](/home/slasten/dev/packetLearning/stack/packet/cuda_crazy_t3_stand/README.md)
+- [cuda_crazy_t3_stand](../stands/cuda_crazy_t3_stand/README.md)
 
 Что уже лежит:
 

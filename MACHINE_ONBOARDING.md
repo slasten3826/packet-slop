@@ -21,16 +21,16 @@ and continue the machine work without flattening it into transformer habits.
 
 Read first:
 
-1. [README.md](/home/slasten/dev/packetLearning/packet-slop/README.md)
-2. [docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md](/home/slasten/dev/packetLearning/packet-slop/docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
-3. [docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md](/home/slasten/dev/packetLearning/packet-slop/docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
-4. [docs/26_RING_CW_ASYMMETRY_RU.md](/home/slasten/dev/packetLearning/packet-slop/docs/26_RING_CW_ASYMMETRY_RU.md)
+1. [README.md](README.md)
+2. [docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md](docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
+3. [docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md](docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
+4. [docs/26_RING_CW_ASYMMETRY_RU.md](docs/26_RING_CW_ASYMMETRY_RU.md)
 
 Then:
 
-5. [stands/lua_crazy_torus_stand/README.md](/home/slasten/dev/packetLearning/packet-slop/stands/lua_crazy_torus_stand/README.md)
-6. [stands/cuda_crazy_t3_stand/README.md](/home/slasten/dev/packetLearning/packet-slop/stands/cuda_crazy_t3_stand/README.md)
-7. [prototypes/zig packet prototype/layer2_boundary.zig](/home/slasten/dev/packetLearning/packet-slop/prototypes/zig%20packet%20prototype/layer2_boundary.zig)
+5. [stands/lua_crazy_torus_stand/README.md](stands/lua_crazy_torus_stand/README.md)
+6. [stands/cuda_crazy_t3_stand/README.md](stands/cuda_crazy_t3_stand/README.md)
+7. [prototypes/zig packet prototype/layer2_boundary.zig](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
 
 ## Do Not Do
 

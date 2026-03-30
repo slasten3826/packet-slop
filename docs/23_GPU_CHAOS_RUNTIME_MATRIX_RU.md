@@ -13,7 +13,7 @@
 
 Стенд:
 
-- [cuda_crazy_t3_stand](/home/slasten/dev/packetLearning/stack/packet/cuda_crazy_t3_stand/README.md)
+- [cuda_crazy_t3_stand](../stands/cuda_crazy_t3_stand/README.md)
 
 Контрольный прогон:
 

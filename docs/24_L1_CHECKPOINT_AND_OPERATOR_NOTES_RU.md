@@ -34,9 +34,9 @@
 
 Ключевые документы:
 
-- [06_CHAOS_LAYER_MALBOLGE_LAWS_RU.md](/home/slasten/dev/packetLearning/stack/06_CHAOS_LAYER_MALBOLGE_LAWS_RU.md)
-- [07_CHAOS_LAYER_HYPOTHESIS_RU.md](/home/slasten/dev/packetLearning/stack/07_CHAOS_LAYER_HYPOTHESIS_RU.md)
-- [10_L1_CRAZY_TORUS_V0_RU.md](/home/slasten/dev/packetLearning/stack/10_L1_CRAZY_TORUS_V0_RU.md)
+- [06_CHAOS_LAYER_MALBOLGE_LAWS_RU.md](06_CHAOS_LAYER_MALBOLGE_LAWS_RU.md)
+- [07_CHAOS_LAYER_HYPOTHESIS_RU.md](07_CHAOS_LAYER_HYPOTHESIS_RU.md)
+- [10_L1_CRAZY_TORUS_V0_RU.md](10_L1_CRAZY_TORUS_V0_RU.md)
 
 ### 1.2 CPU baseline жив
 
@@ -69,7 +69,7 @@
 
 Ключевой документ:
 
-- [21_CUDA_T3_PARITY_RU.md](/home/slasten/dev/packetLearning/stack/21_CUDA_T3_PARITY_RU.md)
+- [21_CUDA_T3_PARITY_RU.md](21_CUDA_T3_PARITY_RU.md)
 
 ### 1.4 Реальный host-GPU прогон жив
 
@@ -84,7 +84,7 @@
 
 Ключевой документ:
 
-- [23_GPU_CHAOS_RUNTIME_MATRIX_RU.md](/home/slasten/dev/packetLearning/stack/23_GPU_CHAOS_RUNTIME_MATRIX_RU.md)
+- [23_GPU_CHAOS_RUNTIME_MATRIX_RU.md](23_GPU_CHAOS_RUNTIME_MATRIX_RU.md)
 
 ### 1.5 CPU и GPU уже нельзя считать одной и той же инженерной формой
 
@@ -107,7 +107,7 @@ GPU показывает другую:
 
 ## 2. Где мы реально стоим в плане
 
-Если привязываться к [08_PACKET_NEURAL_PLAN_RU.md](/home/slasten/dev/packetLearning/stack/08_PACKET_NEURAL_PLAN_RU.md), то текущее состояние такое:
+Если привязываться к [08_PACKET_NEURAL_PLAN_RU.md](08_PACKET_NEURAL_PLAN_RU.md), то текущее состояние такое:
 
 - шаг 1: минимально пройден
 - шаг 2: минимально пройден
@@ -156,7 +156,7 @@ GPU показывает другую:
 
 Технический документ слоя:
 
-- [25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md](/home/slasten/dev/packetLearning/stack/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
+- [25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md](25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
 
 ## 5. Что из человеческого уже помогает машине
 

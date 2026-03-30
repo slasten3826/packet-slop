@@ -54,15 +54,15 @@ Not a metaphor.
 
 ## Repository Layout
 
-- [`docs/`](/home/slasten/dev/packetLearning/packet-slop/docs)
+- [`docs/`](docs/)
   - selected research documents relevant to `packet-slop`
   - only the documents that matter to the current `packet-neural / L1` path
 
-- [`stands/`](/home/slasten/dev/packetLearning/packet-slop/stands)
+- [`stands/`](stands/)
   - working experimental stands
   - current `Lua` and `CUDA` implementations of the `L1` layer
 
-- [`prototypes/`](/home/slasten/dev/packetLearning/packet-slop/prototypes)
+- [`prototypes/`](prototypes/)
   - older prototype bodies that still matter architecturally
   - especially the old `zig` packet prototype
 
@@ -70,13 +70,13 @@ Not a metaphor.
 
 Read in this order:
 
-1. [`docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md`](/home/slasten/dev/packetLearning/packet-slop/docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
-2. [`docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md`](/home/slasten/dev/packetLearning/packet-slop/docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
-3. [`docs/26_RING_CW_ASYMMETRY_RU.md`](/home/slasten/dev/packetLearning/packet-slop/docs/26_RING_CW_ASYMMETRY_RU.md)
-4. [`stands/lua_crazy_torus_stand/README.md`](/home/slasten/dev/packetLearning/packet-slop/stands/lua_crazy_torus_stand/README.md)
-5. [`stands/cuda_crazy_t3_stand/README.md`](/home/slasten/dev/packetLearning/packet-slop/stands/cuda_crazy_t3_stand/README.md)
-6. [`prototypes/zig packet prototype/layer2_boundary.zig`](/home/slasten/dev/packetLearning/packet-slop/prototypes/zig%20packet%20prototype/layer2_boundary.zig)
-7. [`prototypes/zig packet prototype/layer3_calm.zig`](/home/slasten/dev/packetLearning/packet-slop/prototypes/zig%20packet%20prototype/layer3_calm.zig)
+1. [`docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md`](docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
+2. [`docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md`](docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
+3. [`docs/26_RING_CW_ASYMMETRY_RU.md`](docs/26_RING_CW_ASYMMETRY_RU.md)
+4. [`stands/lua_crazy_torus_stand/README.md`](stands/lua_crazy_torus_stand/README.md)
+5. [`stands/cuda_crazy_t3_stand/README.md`](stands/cuda_crazy_t3_stand/README.md)
+6. [`prototypes/zig packet prototype/layer2_boundary.zig`](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
+7. [`prototypes/zig packet prototype/layer3_calm.zig`](prototypes/zig%20packet%20prototype/layer3_calm.zig)
 
 ## Current Hard Truths
 

@@ -269,7 +269,7 @@ Carry-state текущего активного trace.
 
 Отдельная фиксация асимметрии:
 
-- [26_RING_CW_ASYMMETRY_RU.md](/home/slasten/dev/packetLearning/stack/26_RING_CW_ASYMMETRY_RU.md)
+- [26_RING_CW_ASYMMETRY_RU.md](26_RING_CW_ASYMMETRY_RU.md)
 
 ## 8. Scaling
 
