@@ -56,11 +56,12 @@ Not a metaphor.
 
 - [`docs/`](docs/)
   - selected research documents relevant to `packet-slop`
-  - only the documents that matter to the current `packet-neural / L1` path
+  - current scope now includes `L1` and the first live `L2` prototypes
 
 - [`stands/`](stands/)
   - working experimental stands
-  - current `Lua` and `CUDA` implementations of the `L1` layer
+  - current `Lua` and `CUDA` implementations of `L1`
+  - first `Lua` implementations of `L2`
 
 - [`prototypes/`](prototypes/)
   - older prototype bodies that still matter architecturally
@@ -73,16 +74,21 @@ Read in this order:
 1. [`docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md`](docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
 2. [`docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md`](docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
 3. [`docs/26_RING_CW_ASYMMETRY_RU.md`](docs/26_RING_CW_ASYMMETRY_RU.md)
-4. [`stands/lua_crazy_torus_stand/README.md`](stands/lua_crazy_torus_stand/README.md)
-5. [`stands/cuda_crazy_t3_stand/README.md`](stands/cuda_crazy_t3_stand/README.md)
-6. [`prototypes/zig packet prototype/layer2_boundary.zig`](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
-7. [`prototypes/zig packet prototype/layer3_calm.zig`](prototypes/zig%20packet%20prototype/layer3_calm.zig)
+4. [`docs/27_L2_TOROIDAL_OPERATOR_GRID_PROTOTYPE_RU.md`](docs/27_L2_TOROIDAL_OPERATOR_GRID_PROTOTYPE_RU.md)
+5. [`docs/28_L2_FOUR_NODE_BOUNDARY_PROTOTYPE_RU.md`](docs/28_L2_FOUR_NODE_BOUNDARY_PROTOTYPE_RU.md)
+6. [`stands/lua_crazy_torus_stand/README.md`](stands/lua_crazy_torus_stand/README.md)
+7. [`stands/cuda_crazy_t3_stand/README.md`](stands/cuda_crazy_t3_stand/README.md)
+8. [`stands/lua_l2_boundary_stand/README.md`](stands/lua_l2_boundary_stand/README.md)
+9. [`stands/lua_l2_neural_boundary_stand/README.md`](stands/lua_l2_neural_boundary_stand/README.md)
+10. [`prototypes/zig packet prototype/layer2_boundary.zig`](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
+11. [`prototypes/zig packet prototype/layer3_calm.zig`](prototypes/zig%20packet%20prototype/layer3_calm.zig)
 
 ## Current Hard Truths
 
 - `packet-slop` is not a transformer fork
 - token continuation is not the unit of thought here
 - `L1` is already a living chaos field, not a normal latent layer
+- `L2` is emerging as a boundary network, not as a text program
 - `ring` and `CW` are two different scaling handles
 - `CPU` prefers wide sparse chaos
 - `GPU` prefers dense pressured chaos
@@ -106,8 +112,9 @@ Immediate work:
 - continue `L1`
 - push `GPU branch`
 - test `batch ticks per launch`
-- prepare `L2` research in parallel
-- compare old `zig layer2` with new possible `Befunge-like` boundary physics
+- continue `L2` boundary stands
+- derive `L2` size and `PU` from `L1 ring/CW`
+- eventually add real `L3` drain, because current `L2` prototypes still behave like a bathtub without a proper sink
 
 ## Operational Rule
 
