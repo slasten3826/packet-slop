@@ -17,6 +17,7 @@ It is here so that other machines can quickly see:
 - what was proven on real `GPU`
 - where the old `zig` prototype still matters
 - what remains open
+- how `PU` is beginning to act as the economic nervous system of the machine
 
 ## Human Warning
 
@@ -55,13 +56,14 @@ Not a metaphor.
 ## Repository Layout
 
 - [`docs/`](docs/)
-  - selected research documents relevant to `packet-slop`
-  - current scope now includes `L1` and the first live `L2` prototypes
+- selected research documents relevant to `packet-slop`
+  - current scope now includes `L1`, first live `L2` and `L3` prototypes, and `PU` economy hypotheses
 
 - [`stands/`](stands/)
   - working experimental stands
   - current `Lua` and `CUDA` implementations of `L1`
-  - first `Lua` implementations of `L2`
+  - first `Lua` and `CUDA` implementations of `L2`
+  - first `Lua` and `CUDA` implementations of `L3`
 
 - [`prototypes/`](prototypes/)
   - older prototype bodies that still matter architecturally
@@ -76,12 +78,18 @@ Read in this order:
 3. [`docs/26_RING_CW_ASYMMETRY_RU.md`](docs/26_RING_CW_ASYMMETRY_RU.md)
 4. [`docs/27_L2_TOROIDAL_OPERATOR_GRID_PROTOTYPE_RU.md`](docs/27_L2_TOROIDAL_OPERATOR_GRID_PROTOTYPE_RU.md)
 5. [`docs/28_L2_FOUR_NODE_BOUNDARY_PROTOTYPE_RU.md`](docs/28_L2_FOUR_NODE_BOUNDARY_PROTOTYPE_RU.md)
-6. [`stands/lua_crazy_torus_stand/README.md`](stands/lua_crazy_torus_stand/README.md)
-7. [`stands/cuda_crazy_t3_stand/README.md`](stands/cuda_crazy_t3_stand/README.md)
-8. [`stands/lua_l2_boundary_stand/README.md`](stands/lua_l2_boundary_stand/README.md)
-9. [`stands/lua_l2_neural_boundary_stand/README.md`](stands/lua_l2_neural_boundary_stand/README.md)
-10. [`prototypes/zig packet prototype/layer2_boundary.zig`](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
-11. [`prototypes/zig packet prototype/layer3_calm.zig`](prototypes/zig%20packet%20prototype/layer3_calm.zig)
+6. [`docs/29_L2_DRAIN_AND_PU_EMERGENCE_RU.md`](docs/29_L2_DRAIN_AND_PU_EMERGENCE_RU.md)
+7. [`docs/32_PU_ECONOMY_HYPOTHESIS_RU.md`](docs/32_PU_ECONOMY_HYPOTHESIS_RU.md)
+8. [`docs/33_L2_CAPACITY_AS_PU_MAX_RU.md`](docs/33_L2_CAPACITY_AS_PU_MAX_RU.md)
+9. [`docs/34_CPU_GPU_PU_ECONOMY_SPLIT_RU.md`](docs/34_CPU_GPU_PU_ECONOMY_SPLIT_RU.md)
+10. [`stands/lua_crazy_torus_stand/README.md`](stands/lua_crazy_torus_stand/README.md)
+11. [`stands/cuda_crazy_t3_stand/README.md`](stands/cuda_crazy_t3_stand/README.md)
+12. [`stands/lua_l2_neural_boundary_stand/README.md`](stands/lua_l2_neural_boundary_stand/README.md)
+13. [`stands/lua_l3_substrate_stand/README.md`](stands/lua_l3_substrate_stand/README.md)
+14. [`stands/cuda_l2_neural_boundary_stand/README.md`](stands/cuda_l2_neural_boundary_stand/README.md)
+15. [`stands/cuda_l3_substrate_stand/README.md`](stands/cuda_l3_substrate_stand/README.md)
+16. [`prototypes/zig packet prototype/layer2_boundary.zig`](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
+17. [`prototypes/zig packet prototype/layer3_calm.zig`](prototypes/zig%20packet%20prototype/layer3_calm.zig)
 
 ## Current Hard Truths
 
@@ -89,9 +97,12 @@ Read in this order:
 - token continuation is not the unit of thought here
 - `L1` is already a living chaos field, not a normal latent layer
 - `L2` is emerging as a boundary network, not as a text program
+- `L3` is emerging as a configurable recurrent substrate, not as a classic VM port
 - `ring` and `CW` are two different scaling handles
 - `CPU` prefers wide sparse chaos
 - `GPU` prefers dense pressured chaos
+- `PU` is becoming the economic nervous system of the cycle
+- `CPU` and `GPU` likely require different `PU` economics
 
 ## What Is Not Here
 
@@ -101,6 +112,7 @@ This repo currently does not try to provide:
 - ProcessLang canon
 - human-facing explanation of the whole tree
 - finished `L2`
+- finished `L3`
 - finished language manifestation
 
 This repo is intentionally narrowed to the machine-transfer problem.
@@ -113,8 +125,9 @@ Immediate work:
 - push `GPU branch`
 - test `batch ticks per launch`
 - continue `L2` boundary stands
-- derive `L2` size and `PU` from `L1 ring/CW`
-- eventually add real `L3` drain, because current `L2` prototypes still behave like a bathtub without a proper sink
+- continue `L3` substrate stands
+- refine `PU` economy
+- keep `CPU` and `GPU` economics separate where the hardware bodies demand it
 
 ## Operational Rule
 
