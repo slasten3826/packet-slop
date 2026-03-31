@@ -4,3 +4,5 @@
 .DS_Store
 
 stands/cuda_crazy_t3_stand/crazy_t3
+stands/cuda_l2_neural_boundary_stand/l2_neural
+stands/cuda_l3_substrate_stand/l3_substrate
