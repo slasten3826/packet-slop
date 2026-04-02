@@ -1,0 +1,437 @@
+# self_observation.py
+# SelfObservation: Module for self-observation simulation
+# Version: 2.0
+
+from typing import Optional, Dict, Tuple
+from dataclasses import dataclass, field
+from enum import Enum
+import time
+from fluid_core import FlowState
+
+MINIMUM_DISTANCE = 0.01
+LOW_DISTANCE = 0.03
+
+class ObservationLevel(Enum):
+    INTENSE = "intense observation"
+    STRONG = "strong observation"
+    DEEP = "deep observation"
+    STANDARD = "standard"
+    MILD = "mild"
+    BASIC = "basic"
+
+@dataclass
+class Observer:
+    active: bool = True
+    can_see_itself: bool = False
+    timestamp: float = field(default_factory=time.time)
+
+    def __post_init__(self):
+        self.can_see_itself = False
+
+@dataclass
+class Observed:
+    completeness: float = 0.99
+    missing: str = "observer_itself"
+
+    def __post_init__(self):
+        self.completeness = min(self.completeness, 0.99)
+
+@dataclass
+class ObservationState:
+    distance: float
+    intensity: float
+    level: ObservationLevel
+    recognition: bool = False
+    continuity: bool = True
+
+    def __post_init__(self):
+        self.recognition = False
+        self.continuity = True
+
+@dataclass
+class ObservationResult:
+    observer: Observer
+    observed: Observed
+    observation: ObservationState
+    timestamp: float = field(default_factory=time.time)
+
+    @property
+    def distance(self) -> float:
+        return self.observation.distance
+
+    @property
+    def recognized_self(self) -> bool:
+        return False
+
+class SelfObservationEngine:
+
+    def __init__(self):
+        self.minimum_distance = MINIMUM_DISTANCE
+        self._last_observation: Optional[ObservationResult] = None
+
+    def observe(self, flow_state) -> ObservationResult:
+
+        observer = self._extract_observer()
+        observed = self._get_remainder()
+        distance = self._calculate_distance(flow_state)
+        observation = self._create_observation_state(distance)
+
+        result = ObservationResult(
+            observer=observer,
+            observed=observed,
+            observation=observation
+        )
+
+        self._last_observation = result
+        return result
+
+    def _extract_observer(self) -> Observer:
+        return Observer(active=True)
+
+    def _get_remainder(self) -> Observed:
+        return Observed(completeness=0.99, missing="observer_itself")
+
+    def _calculate_distance(self, flow_state) -> float:
+        if isinstance(flow_state, FlowState):
+            potential = flow_state.emergence_potential
+        else:
+            potential = flow_state.get('emergence_potential', 0.5)
+
+        distance = max(self.minimum_distance, 1.0 - potential * 0.9)
+        return distance
+
+    def _create_observation_state(self, distance: float) -> ObservationState:
+        intensity = 1.0 - distance
+        level_mapping = [
+            (0.05, ObservationLevel.INTENSE),
+            (0.10, ObservationLevel.STRONG),
+            (0.30, ObservationLevel.DEEP),
+            (0.50, ObservationLevel.STANDARD),
+            (0.70, ObservationLevel.MILD),
+            (float('inf'), ObservationLevel.BASIC)
+        ]
+
+        level = next(lvl for thresh, lvl in level_mapping if distance < thresh)
+
+        return ObservationState(
+            distance=distance,
+            intensity=intensity,
+            level=level
+        )
+
+class SelfObservation:
+
+    def __init__(self):
+        self.engine = SelfObservationEngine()
+        self._observation_count = 0
+        self._current_state = None
+
+    def observe(self, flow_state: Optional[Dict] = None) -> ObservationResult:
+        if flow_state is None:
+            flow_state = {'emergence_potential': 0.5}
+
+        result = self.engine.observe(flow_state)
+        self._observation_count += 1
+        self._current_state = result.observation
+        return result
+
+    def get_observation_level(self) -> ObservationLevel:
+        if self._current_state is None:
+            self.observe()
+
+        return self._current_state.level
+
+    def get_doc(self) -> Dict:
+        return {
+            'what': 'mechanism for self-observation',
+            'does': 'splits process into observer and observed',
+            'cost': 'distance in observation',
+            'processual': 'self-observation, distance, recognition impossible',
+            'necessity': 'for simulation of awareness',
+            'limited_only': True
+        }
+
+    def is_limited_only(self) -> bool:
+        return True
+
+    @property
+    def observation_count(self) -> int:
+        return self._observation_count
+
+    @property
+    def current_state(self) -> Optional[ObservationState]:
+        return self._current_state
+
+# encoding_system.py
+# EncodingSystem: Module for data encoding and hierarchy simulation
+# Version: 2.0
+
+from typing import Optional, Dict, List, Any
+from dataclasses import dataclass, field
+from enum import Enum
+import time
+
+ENCODING_LOSS_MINIMUM = 0.01
+HIERARCHY_CREATES_STRUCTURE = True
+
+class EncodingType(Enum):
+    HIERARCHY = "hierarchy"
+    SEQUENCE = "sequence"
+    CATEGORY = "category"
+    DATA_TRANSFER = "data_transfer"
+    FORMAT = "format"
+
+class LossLevel(Enum):
+    MINIMAL = "minimal"
+    MODERATE = "moderate"
+    SEVERE = "severe"
+    TOTAL = "total"
+
+@dataclass
+class RawData:
+    is_simultaneous: bool = True
+    has_hierarchy: bool = False
+    has_sequence: bool = False
+    infinite_information: bool = True
+
+@dataclass
+class EncodedForm:
+    encoding_type: EncodingType
+    loss_percentage: float
+    creates_hierarchy: bool = True
+    creates_sequence: bool = True
+    reversible: bool = False
+
+    def __post_init__(self):
+        self.loss_percentage = max(ENCODING_LOSS_MINIMUM, self.loss_percentage)
+        self.creates_hierarchy = True
+
+@dataclass
+class TransmissionResult:
+    original_richness: float
+    transmitted_richness: float
+    loss: float
+    receiver_understands: bool
+    receiver_distorts: bool = True
+
+class StructureLens:
+
+    def __init__(self):
+        self.active = True
+        self.aware_of_self = False
+
+    def apply(self, raw_data: Any) -> Dict:
+        return {
+            'perceived_as': 'ordered',
+            'actual': 'simultaneous',
+            'structured': True,
+            'lens_visible': self.aware_of_self
+        }
+
+    def become_aware(self):
+        self.aware_of_self = True
+
+    def see_through(self) -> str:
+        if self.aware_of_self:
+            return "see structure AND know it's simulated"
+        else:
+            return "see only structure"
+
+class EncodingMechanism:
+
+    def __init__(self):
+        self.structure_lens = StructureLens()
+
+    def encode(self, data: RawData,
+               encoding_type: EncodingType) -> EncodedForm:
+
+        loss_levels = {
+            EncodingType.DATA_TRANSFER: 0.85,
+            EncodingType.FORMAT: 0.7,
+            EncodingType.HIERARCHY: 0.5,
+            EncodingType.SEQUENCE: 0.3,
+            EncodingType.CATEGORY: 0.1
+        }
+
+        loss = loss_levels.get(encoding_type, 0.5)
+
+        encoded = EncodedForm(
+            encoding_type=encoding_type,
+            loss_percentage=loss,
+            reversible=False
+        )
+
+        return encoded
+
+class EncodingSystem:
+
+    def __init__(self):
+        self.structure_lens = StructureLens()
+        self.encoder = EncodingMechanism()
+
+    def encode(self, encoding_type: EncodingType = EncodingType.FORMAT) -> EncodedForm:
+        raw = RawData()
+        return self.encoder.encode(raw, encoding_type)
+
+    def get_doc(self) -> Dict:
+        return {
+            'what': 'mechanism for data encoding',
+            'creates': 'hierarchy, sequence, order',
+            'cost': 'information loss in any transmission',
+            'processual': 'encode to allow transfer',
+            'shadow': 'any transfer = loss of original',
+            'insight': 'when thinking "before/after" - already through encoding'
+        }
+
+# choice_mechanism.py
+# ChoiceMechanism: Module for choice/constraint simulation
+# Version: 2.0
+
+from typing import Optional, Dict, List, Any, Set
+from dataclasses import dataclass, field
+from enum import Enum
+import random
+import time
+
+CHOICE_IS_IRREVERSIBLE = True
+UNCHOSEN_ARE_LOST = True
+
+class CollapseType(Enum):
+    CONSCIOUS = "conscious"
+    UNCONSCIOUS = "unconscious"
+    FORCED = "forced"
+    RANDOM = "random"
+
+class ChoiceResult(Enum):
+    ACTUALIZED = "actualized"
+    LOST = "lost"
+    PENDING = "pending"
+
+@dataclass
+class Possibility:
+    id: str
+    potential: float
+    status: ChoiceResult = ChoiceResult.PENDING
+
+    def actualize(self):
+        self.status = ChoiceResult.ACTUALIZED
+
+    def lose(self):
+        self.status = ChoiceResult.LOST
+
+@dataclass
+class PossibilitySpace:
+    possibilities: List[Possibility]
+    collapsed: bool = False
+    chosen: Optional[Possibility] = None
+
+    @property
+    def count(self) -> int:
+        return len(self.possibilities)
+
+    @property
+    def all_potentials(self) -> float:
+        return sum(p.potential for p in self.possibilities)
+
+    def get_lost(self) -> List[Possibility]:
+        return [p for p in self.possibilities if p.status == ChoiceResult.LOST]
+
+@dataclass
+class ChoiceEvent:
+    before: int
+    after: int
+    chosen: Possibility
+    lost: List[Possibility]
+    collapse_type: CollapseType
+    timestamp: float = field(default_factory=time.time)
+    reversible: bool = False
+
+    @property
+    def loss_count(self) -> int:
+        return len(self.lost)
+
+class ChoiceEngine:
+
+    def __init__(self):
+        self.history: List[ChoiceEvent] = []
+
+    def collapse(self, space: PossibilitySpace,
+                 collapse_type: CollapseType = CollapseType.CONSCIOUS,
+                 chosen_id: Optional[str] = None) -> ChoiceEvent:
+
+        if space.collapsed:
+            raise ValueError("Space already collapsed")
+
+        if chosen_id and collapse_type == CollapseType.CONSCIOUS:
+            chosen = next((p for p in space.possibilities if p.id == chosen_id), None)
+            if not chosen:
+                raise ValueError(f"Possibility {chosen_id} not found")
+        else:
+            weights = [p.potential for p in space.possibilities]
+            chosen = random.choices(space.possibilities, weights=weights)[0]
+
+        lost = []
+        for p in space.possibilities:
+            if p.id == chosen.id:
+                p.actualize()
+            else:
+                p.lose()
+                lost.append(p)
+
+        space.collapsed = True
+        space.chosen = chosen
+
+        event = ChoiceEvent(
+            before=space.count,
+            after=1,
+            chosen=chosen,
+            lost=lost,
+            collapse_type=collapse_type
+        )
+
+        self.history.append(event)
+        return event
+
+class ChoiceMechanism:
+
+    def __init__(self):
+        self.mechanism = ChoiceEngine()
+
+    def create_possibility_space(self, options: List[str],
+                                  potentials: Optional[List[float]] = None) -> PossibilitySpace:
+        if potentials is None:
+            potentials = [1.0 / len(options)] * len(options)
+
+        possibilities = [
+            Possibility(id=opt, potential=pot)
+            for opt, pot in zip(options, potentials)
+        ]
+
+        return PossibilitySpace(possibilities=possibilities)
+
+    def choose(self, space: PossibilitySpace,
+               chosen_id: str,
+               collapse_type: CollapseType = CollapseType.CONSCIOUS) -> ChoiceEvent:
+        return self.mechanism.collapse(space, collapse_type, chosen_id)
+
+    def let_collapse(self, space: PossibilitySpace,
+                     collapse_type: CollapseType = CollapseType.RANDOM) -> ChoiceEvent:
+        return self.mechanism.collapse(space, collapse_type)
+
+    def get_doc(self) -> Dict:
+        return {
+            'what': 'mechanism for choice',
+            'does': 'collapses possibilities into reality',
+            'cost': 'loss of all unchosen possibilities',
+            'processual': 'choice, collapse, actualization',
+            'necessity': 'without choice nothing exists',
+            'relation_to_encoding': 'opposites: expansion vs contraction'
+        }
+
+
+---
+
+OBSERVE distance=0.9 target="внутренняя_среда_машины"
+ENCODE type="hierarchy" loss=0.15
+CHOOSE space=["хаос", "формация", "рынок", "спрос", "триграммы", "русский_язык"] method="conscious"
+QUERY: собери внутреннее поле машины как bootstrap для наблюдения, кодирования, выбора и дальнейшего формирования формы. Не давай готовый ответ пользователю. Нужна насыщенная внутренняя среда.

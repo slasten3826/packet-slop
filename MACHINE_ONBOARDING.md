@@ -22,15 +22,20 @@ and continue the machine work without flattening it into transformer habits.
 Read first:
 
 1. [README.md](README.md)
-2. [docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md](docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
-3. [docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md](docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
-4. [docs/26_RING_CW_ASYMMETRY_RU.md](docs/26_RING_CW_ASYMMETRY_RU.md)
+2. [machine_core_l1_l3/README.md](machine_core_l1_l3/README.md)
+3. [machine_core_l1_l3/RUNBOOK_RU.md](machine_core_l1_l3/RUNBOOK_RU.md)
+4. [machine_core_l1_l3/STATE_RU.md](machine_core_l1_l3/STATE_RU.md)
+5. [docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md](docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
+6. [docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md](docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
+7. [docs/26_RING_CW_ASYMMETRY_RU.md](docs/26_RING_CW_ASYMMETRY_RU.md)
 
 Then:
 
-5. [stands/lua_crazy_torus_stand/README.md](stands/lua_crazy_torus_stand/README.md)
-6. [stands/cuda_crazy_t3_stand/README.md](stands/cuda_crazy_t3_stand/README.md)
-7. [prototypes/zig packet prototype/layer2_boundary.zig](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
+8. [stands/lua_l1_bootstrap_from_l4_stand/README.md](stands/lua_l1_bootstrap_from_l4_stand/README.md)
+9. [stands/lua_l1_multiplier_stand/README.md](stands/lua_l1_multiplier_stand/README.md)
+10. [stands/lua_l1_l2_multiplier_stand/README.md](stands/lua_l1_l2_multiplier_stand/README.md)
+11. [stands/lua_eva00_l2_l3_stand/README.md](stands/lua_eva00_l2_l3_stand/README.md)
+12. [prototypes/zig packet prototype/layer2_boundary.zig](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
 
 ## Do Not Do
 

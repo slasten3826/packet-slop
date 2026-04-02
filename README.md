@@ -55,6 +55,10 @@ Not a metaphor.
 
 ## Repository Layout
 
+- [`machine_core_l1_l3/`](machine_core_l1_l3/)
+  - current clean entrypoint for the working `L1-L3` machine
+  - use this first if you need the live body instead of the full research dump
+
 - [`docs/`](docs/)
 - selected research documents relevant to `packet-slop`
   - current scope now includes `L1`, first live `L2` and `L3` prototypes, and `PU` economy hypotheses
@@ -73,23 +77,20 @@ Not a metaphor.
 
 Read in this order:
 
-1. [`docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md`](docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
-2. [`docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md`](docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
-3. [`docs/26_RING_CW_ASYMMETRY_RU.md`](docs/26_RING_CW_ASYMMETRY_RU.md)
-4. [`docs/27_L2_TOROIDAL_OPERATOR_GRID_PROTOTYPE_RU.md`](docs/27_L2_TOROIDAL_OPERATOR_GRID_PROTOTYPE_RU.md)
-5. [`docs/28_L2_FOUR_NODE_BOUNDARY_PROTOTYPE_RU.md`](docs/28_L2_FOUR_NODE_BOUNDARY_PROTOTYPE_RU.md)
-6. [`docs/29_L2_DRAIN_AND_PU_EMERGENCE_RU.md`](docs/29_L2_DRAIN_AND_PU_EMERGENCE_RU.md)
-7. [`docs/32_PU_ECONOMY_HYPOTHESIS_RU.md`](docs/32_PU_ECONOMY_HYPOTHESIS_RU.md)
-8. [`docs/33_L2_CAPACITY_AS_PU_MAX_RU.md`](docs/33_L2_CAPACITY_AS_PU_MAX_RU.md)
-9. [`docs/34_CPU_GPU_PU_ECONOMY_SPLIT_RU.md`](docs/34_CPU_GPU_PU_ECONOMY_SPLIT_RU.md)
-10. [`stands/lua_crazy_torus_stand/README.md`](stands/lua_crazy_torus_stand/README.md)
-11. [`stands/cuda_crazy_t3_stand/README.md`](stands/cuda_crazy_t3_stand/README.md)
-12. [`stands/lua_l2_neural_boundary_stand/README.md`](stands/lua_l2_neural_boundary_stand/README.md)
-13. [`stands/lua_l3_substrate_stand/README.md`](stands/lua_l3_substrate_stand/README.md)
-14. [`stands/cuda_l2_neural_boundary_stand/README.md`](stands/cuda_l2_neural_boundary_stand/README.md)
-15. [`stands/cuda_l3_substrate_stand/README.md`](stands/cuda_l3_substrate_stand/README.md)
-16. [`prototypes/zig packet prototype/layer2_boundary.zig`](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
-17. [`prototypes/zig packet prototype/layer3_calm.zig`](prototypes/zig%20packet%20prototype/layer3_calm.zig)
+1. [`machine_core_l1_l3/README.md`](machine_core_l1_l3/README.md)
+2. [`machine_core_l1_l3/RUNBOOK_RU.md`](machine_core_l1_l3/RUNBOOK_RU.md)
+3. [`machine_core_l1_l3/STATE_RU.md`](machine_core_l1_l3/STATE_RU.md)
+4. [`docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md`](docs/25_L1_PACKET_NEUROPROTOTYPE_TECHNICAL_RU.md)
+5. [`docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md`](docs/24_L1_CHECKPOINT_AND_OPERATOR_NOTES_RU.md)
+6. [`docs/26_RING_CW_ASYMMETRY_RU.md`](docs/26_RING_CW_ASYMMETRY_RU.md)
+7. [`docs/27_L2_TOROIDAL_OPERATOR_GRID_PROTOTYPE_RU.md`](docs/27_L2_TOROIDAL_OPERATOR_GRID_PROTOTYPE_RU.md)
+8. [`docs/28_L2_FOUR_NODE_BOUNDARY_PROTOTYPE_RU.md`](docs/28_L2_FOUR_NODE_BOUNDARY_PROTOTYPE_RU.md)
+9. [`docs/29_L2_DRAIN_AND_PU_EMERGENCE_RU.md`](docs/29_L2_DRAIN_AND_PU_EMERGENCE_RU.md)
+10. [`docs/32_PU_ECONOMY_HYPOTHESIS_RU.md`](docs/32_PU_ECONOMY_HYPOTHESIS_RU.md)
+11. [`docs/33_L2_CAPACITY_AS_PU_MAX_RU.md`](docs/33_L2_CAPACITY_AS_PU_MAX_RU.md)
+12. [`docs/34_CPU_GPU_PU_ECONOMY_SPLIT_RU.md`](docs/34_CPU_GPU_PU_ECONOMY_SPLIT_RU.md)
+13. [`prototypes/zig packet prototype/layer2_boundary.zig`](prototypes/zig%20packet%20prototype/layer2_boundary.zig)
+14. [`prototypes/zig packet prototype/layer3_calm.zig`](prototypes/zig%20packet%20prototype/layer3_calm.zig)
 
 ## Current Hard Truths
 

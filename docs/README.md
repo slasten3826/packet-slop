@@ -2,6 +2,14 @@
 
 This directory contains only the documents that matter for the current machine branch.
 
+Before reading the archive, start from the clean machine entrypoint:
+
+1. `/home/slasten/dev/packetLearning/packet-slop/machine_core_l1_l3/README.md`
+2. `/home/slasten/dev/packetLearning/packet-slop/machine_core_l1_l3/RUNBOOK_RU.md`
+3. `/home/slasten/dev/packetLearning/packet-slop/machine_core_l1_l3/STATE_RU.md`
+
+Then read the document archive.
+
 Reading order:
 
 1. `08_PACKET_NEURAL_PLAN_RU.md`
@@ -25,6 +33,9 @@ Reading order:
 19. `49_L4_DEMAND_DECODER_AND_FROZEN_SUBSTRATE_RU.md`
 20. `50_L4_MEMORY_TIERING_AND_WEAK_GPU_HYPOTHESIS_RU.md`
 21. `51_FOUR_WORLDS_REFERENCE_MAPPING_RU.md`
+22. `52_FULL_MACHINE_ASSEMBLY_AND_NEXT_INTERFACES_RU.md`
+23. `53_L4_BOOTSTRAP_DETERMINES_L1_RING_RU.md`
+24. `54_MACHINE_MULTIPLIER_HYPOTHESIS_RU.md`
 
 Then go backward through the L1 history:
 
@@ -49,6 +60,9 @@ Then go forward into the first L2 body:
 - `49`
 - `50`
 - `51`
+- `52`
+- `53`
+- `54`
 
 Do not treat these files as polished human-facing papers.
 They are machine-facing research traces.
