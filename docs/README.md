@@ -21,6 +21,10 @@ Reading order:
 15. `45_MULTI_L3_AS_LIVE_RAM_HYPOTHESIS_RU.md`
 16. `46_EVA00_FULL_SNAPSHOT_RU.md`
 17. `47_L3_AS_CALM_TRIGRAM_LIFESPACE_HYPOTHESIS_RU.md`
+18. `48_CANONICAL_LAYER_NAMES_AND_CYCLE_RU.md`
+19. `49_L4_DEMAND_DECODER_AND_FROZEN_SUBSTRATE_RU.md`
+20. `50_L4_MEMORY_TIERING_AND_WEAK_GPU_HYPOTHESIS_RU.md`
+21. `51_FOUR_WORLDS_REFERENCE_MAPPING_RU.md`
 
 Then go backward through the L1 history:
 
@@ -41,6 +45,10 @@ Then go forward into the first L2 body:
 - `45`
 - `46`
 - `47`
+- `48`
+- `49`
+- `50`
+- `51`
 
 Do not treat these files as polished human-facing papers.
 They are machine-facing research traces.
