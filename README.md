@@ -98,6 +98,7 @@ Read in this order:
 - `L1` is already a living chaos field, not a normal latent layer
 - `L2` is emerging as a boundary network, not as a text program
 - `L3` is emerging as a configurable recurrent substrate, not as a classic VM port
+- `Q#` is now being considered only as a temporary external reference for probing L2 on potentiality rails
 - `ring` and `CW` are two different scaling handles
 - `CPU` prefers wide sparse chaos
 - `GPU` prefers dense pressured chaos
@@ -125,6 +126,7 @@ Immediate work:
 - push `GPU branch`
 - test `batch ticks per launch`
 - continue `L2` boundary stands
+- probe a minimal `Q#-like` L2 stand against `L1 chaos`
 - continue `L3` substrate stands
 - refine `PU` economy
 - keep `CPU` and `GPU` economics separate where the hardware bodies demand it

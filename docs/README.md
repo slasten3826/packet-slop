@@ -14,6 +14,13 @@ Reading order:
 8. `32_PU_ECONOMY_HYPOTHESIS_RU.md`
 9. `33_L2_CAPACITY_AS_PU_MAX_RU.md`
 10. `34_CPU_GPU_PU_ECONOMY_SPLIT_RU.md`
+11. `41_QSHARP_L2_REFERENCE_HYPOTHESIS_RU.md`
+12. `42_EVA00_ENCODE_PARALLEL_MECHANISM_RU.md`
+13. `43_EVA00_ENCODE_HIDDEN_CONNECT_RU.md`
+14. `44_EVA00_CPU_ENCODE_L3_BASELINE_RU.md`
+15. `45_MULTI_L3_AS_LIVE_RAM_HYPOTHESIS_RU.md`
+16. `46_EVA00_FULL_SNAPSHOT_RU.md`
+17. `47_L3_AS_CALM_TRIGRAM_LIFESPACE_HYPOTHESIS_RU.md`
 
 Then go backward through the L1 history:
 
@@ -27,6 +34,13 @@ Then go forward into the first L2 body:
 - `32`
 - `33`
 - `34`
+- `41`
+- `42`
+- `43`
+- `44`
+- `45`
+- `46`
+- `47`
 
 Do not treat these files as polished human-facing papers.
 They are machine-facing research traces.
