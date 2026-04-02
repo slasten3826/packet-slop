@@ -53,6 +53,13 @@ This is already a machine project.
 Not a concept.
 Not a metaphor.
 
+Latest hard update:
+
+- `L4 -> L1` bootstrap is alive
+- `L3 -> dynamic LoRA -> frozen L4` is technically alive
+- but current `L3` still collapses into degenerate summaries
+- the main open problem of the repo is now the technical body of `L3`
+
 ## Repository Layout
 
 - [`machine_core_l1_l3/`](machine_core_l1_l3/)
@@ -129,6 +136,10 @@ Immediate work:
 - continue `L2` boundary stands
 - probe a minimal `Q#-like` L2 stand against `L1 chaos`
 - continue `L3` substrate stands
+- stop treating `L3` as solved
+- answer the open question:
+  - what recurrent field / substrate should `L3` actually be
+- once `L3` is non-degenerate, reconnect it to `dynamic LoRA`
 - refine `PU` economy
 - keep `CPU` and `GPU` economics separate where the hardware bodies demand it
 

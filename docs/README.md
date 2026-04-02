@@ -36,6 +36,7 @@ Reading order:
 22. `52_FULL_MACHINE_ASSEMBLY_AND_NEXT_INTERFACES_RU.md`
 23. `53_L4_BOOTSTRAP_DETERMINES_L1_RING_RU.md`
 24. `54_MACHINE_MULTIPLIER_HYPOTHESIS_RU.md`
+25. `55_L3_OPEN_QUESTION_AND_DYNAMIC_LORA_STATUS_RU.md`
 
 Then go backward through the L1 history:
 
@@ -63,6 +64,7 @@ Then go forward into the first L2 body:
 - `52`
 - `53`
 - `54`
+- `55`
 
 Do not treat these files as polished human-facing papers.
 They are machine-facing research traces.
